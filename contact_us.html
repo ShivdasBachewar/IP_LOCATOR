@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        
+		<title>Where I Am</title>
+		<link rel='icon' href="img/location-1.png">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/myStyle1.css">
+ 		<script src="js/jquery.min.js"></script>
+  		<script src="js/bootstrap.min.js"></script>
+  		<script src="js/javascript1.js"></script>
+  		<script src="js/javascript2.js"></script>
+		<link rel="stylesheet" href="w3css/w3.css">
+		<style>
+					@media(max-width:767px){
+				.text_on_parallax{ font-size:30px;	margin-top:125px;}
+				.a1{ height:37px;font-size:20px;}
+				.a2{font-size:14px;}
+				h1{	font-size:20px;}
+				h5{ font-size:14px;}}
+				
+			@media(min-width:608px){
+				.text_on_parallax{ font-size:40px;	margin-top:120px;}
+				.a1{ height:42px;font-size:23px;}
+				.a2{font-size:16px;}
+				h1{	font-size:27px;	}
+				h5{ font-size:16px;	}}
+				
+			@media(min-width:992px){
+				.text_on_parallax{ font-size:50px;	margin-top:115px;}
+				.a1{ height:45px;font-size:27px;}
+				.a2{font-size:18px;}
+				h1{	font-size:35px;	}
+				h5{	font-size:18px;	}}
+				
+			@media(min-width:1200px){
+				.text_on_parallax{ font-size:60px;	margin-top:110px;}	
+				.a1{ height:50px;font-size:30px;}
+				.a2{font-size:20px;}
+				h1{	font-size:40px;	}
+				h5{	font-size:20px;	}}		
+		</style>
+	</head>
+
+	<body>
+		<div class="container">
+		<nav class="navbar-fixed-top navbar-inverse navbar-font center1">
+				<div class="navbar-header">
+					<a href="index.html" class="navbar-brand">
+						<img src="img/location-1.png" alt="brand" style="height:30px;width:30px;">
+					</a> 
+					
+					<button type="button" class="navbar-toggle" data-target="#NB1" data-toggle="collapse">
+						<span class="icon-bar" style="color:black;"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>					
+					</button>
+				</div>
+				<div class="collapse navbar-collapse navbar-font center1" id="NB1" style="text-align:1center;">
+					<ul class="nav navbar-nav center1">
+						<li class="m"><a href="index.html">Home</a></li>
+						<li class="m"><a href="desclaimer.html">Desclaimer</a></li>
+						<li class="m"><a href="contact_us.html">Contact Us</a></li>
+					</ul>
+				</div>
+		</nav>
+		</div>
+		<div class="parallax" style="height: 300px; background-image:url('img/matrix_world_map-wallpaper-1920x1080.jpg');"><br>
+			<h1 class="text_on_parallax" id="ip_addr">Contact Us</h1>
+		</div>
+
+		<div class="well">
+		<h3 style="text-align: center; color: green; font-weight: bold;"><!--How can we help you?-->
+We’d Love to Hear from You!
+</h3>
+		<br>
+		<form action="take_detail.php" method="POST">
+		<div class="form-horizontal">
+			<div class="form-group">
+				<label class="control-label col-sm-3" for="name"> Name : </label>
+				<div class="col-sm-6">
+					<input type="text" name="u_name" class="form-control" id="u_nm" placeholder="Enter Name" required>				
+				</div>				
+			</div>
+			<div class="form-group">
+				<label class="control-label col-sm-3 " for="email"> Email : </label>
+				<div class="col-sm-6">
+					<input type="email" name="u_email" class="form-control" id="u_em" placeholder="Enter Email" required>				
+				</div>				
+			</div>
+			<div class="form-group">
+				<label class="control-label col-sm-3" for="subject"> Subject : </label>
+				<div class="col-sm-6">
+					<input type="text" name="u_sub" class="form-control" id="u_sub" placeholder="Enter Subject" required>				
+				</div>				
+			</div>
+			<div class="form-group">
+				<label class="control-label col-sm-3" for="comment"> Your Message : </label>
+				<div class="col-sm-6">
+					<textarea class="form-control" rows="5" id="comment" placeholder="Your Message" required></textarea>				
+				</div>				
+			</div>
+			<div class="form-group">        
+      			<div class="col-sm-offset-5 col-sm-10">
+      				<button type="submit" class="btn w3-khaki w3-button w3-hover-purple" style="width: 100px;">Submit</button> 
+      			</div>
+   			</div>
+
+   		</div>
+   		</form>
+   		</div>
+</div>	
+	<footer style="font-weight:bold; text-align:center; background-color:black; color:white;">
+		<br>&copyCopyright 2017<br> All rights reserved <br><br>
+	</footer>
+	</body>
+</html>
+
